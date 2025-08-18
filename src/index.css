@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+    font-family: "Heebo", Arial, Helvetica, sans-serif;
+}
+
+.Foglihten {
+    font-family: "Foglihten", Arial, Helvetica, sans-serif;
+}
