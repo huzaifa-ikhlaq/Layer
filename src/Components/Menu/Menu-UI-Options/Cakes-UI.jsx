@@ -26,7 +26,7 @@ export default function CakesOption() {
                             />
 
                             {/* Name */}
-                            <h2 className="Foglihten font-bold text-[25px] leading-[33px] cursor-pointer text-black hover:text-[#b09c6d] transition-all duration-200 my-2.5">
+                            <h2 className="Foglihten font-bold text-[22px] leading-[33px] cursor-pointer text-black hover:text-[#b09c6d] transition-all duration-200 my-2.5">
                                 {product.name}
                             </h2>
 
