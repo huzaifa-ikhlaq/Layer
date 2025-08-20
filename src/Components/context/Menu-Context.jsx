@@ -41,7 +41,7 @@ export default function LayerProvider({ children }) {
 
     const CartSection = () => {
         return (
-            <div className="max-w-[27%] h-140 px-[15px] rounded-lg overflow-y-scroll">
+            <div className="min-[800px]:max-w-[27%] h-140 px-[15px] rounded-lg overflow-y-scroll max-[800px]:mt-5">
 
                 {/* Cart heading */}
                 <h1 className='absolute text-xl font-black mb-3 bg-white w-[26%]'>Cart</h1>
@@ -71,15 +71,15 @@ export default function LayerProvider({ children }) {
                             {/* Image */}
                             <img className="object-cover size-19 mr-[15px]" src={item.image} alt={item.name} />
                             <div className='flex flex-col w-full'>
-                                <span className="flex itemscenter justify-between gap-1 w-full">
-                                    <span className='text-[#242424] text-[17px] font-semibold w-50 leading-6'>{item.name}</span>
+                                <span className="flex items-center justify-between gap-1 w-full">
+                                    <span className='text-[#242424] text-[17px] font-semibold min-[768px]:w-50 leading-3'>{item.name}</span>
                                     <span onClick={() => handleRemoveFromCart(item.id)} className='cursor-pointer'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 24 24">
                                             <path fill="#242424" d="M16.066 8.995a.75.75 0 1 0-1.06-1.061L12 10.939L8.995 7.934a.75.75 0 1 0-1.06 1.06L10.938 12l-3.005 3.005a.75.75 0 0 0 1.06 1.06L12 13.06l3.005 3.006a.75.75 0 0 0 1.06-1.06L13.062 12z" strokeWidth="0" stroke="#242424" />
                                         </svg>
                                     </span>
                                 </span>
-                                <span className='text-[#242424] text-[17px] font-semibold w-50 leading-6'>Location: Faisalabad-Civial-Line</span>
+                                <span className='text-[#242424] text-[17px] font-semibold min-[768px]:w-50 leading-5'>Location: Faisalabad-Civial-Line</span>
                             </div>
                         </div>
 
@@ -96,7 +96,7 @@ export default function LayerProvider({ children }) {
                                 <span onClick={() => handleQuantityInCart(item, 1)}
                                     className="text-[#777777] hover:text-[#242424] cursor-pointer">+</span>
                             </span>
-                            <span onClick={() => handleRemoveFromCart(item.id)} className="text-[#b09c6d] text-[15px] font-semibold">
+                            <span className="text-[#b09c6d] text-[15px] font-semibold">
                                 <span className='text-[#777777] font-medium'>{item.quantity} x</span> <span className='text-[16px] font-bold'>{item.currency}</span> {item.price * item.quantity}
                             </span>
                         </div>

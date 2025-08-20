@@ -21,9 +21,9 @@ export default function Menu() {
                     {/* main img  */}
                     <img className='absolute -z-10 h-[356px] w-full object-cover' src={mainImgMenu} alt="Main Menu" />
                     {/* heading  */}
-                    <h1 className='Foglihten text-[54px] font-bold text-white text-center mb-10'>Menu</h1>
+                    <h1 className='Foglihten text-[54px] font-bold text-white text-center min-[500px]:mb-10'>Menu</h1>
                     {/* options */}
-                    <div className='flex items-center gap-10'>
+                    <div className='flex flex-wrap items-center justify-center gap-4 min-[500px]:gap-10'>
                         {/* option 1 */}
                         <NavLink to='/all' className='group flex items-center cursor-pointer'>
                             {({ isActive }) => (
@@ -228,7 +228,7 @@ export default function Menu() {
                     </div >
                 </div >
                 {/* OutLet  */}
-                < div className='mt-15 px-[19px]' >
+                < div className='mt-8 min-[900px]:mt-15 min-[900px]:px-[19px]' >
                     <Outlet />
                 </div >
             </>
